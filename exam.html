@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Exam</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            Online Exam
+        </div>
+
+        <nav>
+            <a href="user-dashboard.html">Dashboard</a>
+            <a href="index.html">Home</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="exam-section">
+
+            <div class="exam-header">
+
+                <h1>Web Development Examination</h1>
+
+                <div class="timer">
+                    Time Left:
+                    <span id="timer">05:00</span>
+                </div>
+
+            </div>
+
+
+            <form id="examForm">
+
+                <div class="question-card">
+
+                    <h3>1. Which language is used to structure a web page?</h3>
+
+                    <label>
+                        <input type="radio" name="q1" value="HTML">
+                        HTML
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="CSS">
+                        CSS
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="JavaScript">
+                        JavaScript
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="Python">
+                        Python
+                    </label>
+
+                </div>
+
+
+                <div class="question-card">
+
+                    <h3>2. Which language is used for styling web pages?</h3>
+
+                    <label>
+                        <input type="radio" name="q2" value="HTML">
+                        HTML
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="CSS">
+                        CSS
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="Java">
+                        Java
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="Python">
+                        Python
+                    </label>
+
+                </div>
+
+
+                <div class="question-card">
+
+                    <h3>3. Which language is mainly used to add interactivity to web pages?</h3>
+
+                    <label>
+                        <input type="radio" name="q3" value="HTML">
+                        HTML
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="CSS">
+                        CSS
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="JavaScript">
+                        JavaScript
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="SQL">
+                        SQL
+                    </label>
+
+                </div>
+
+
+                <div class="question-card">
+
+                    <h3>4. Which technology is used to store data in the browser?</h3>
+
+                    <label>
+                        <input type="radio" name="q4" value="Local Storage">
+                        Local Storage
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q4" value="CSS">
+                        CSS
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q4" value="HTML">
+                        HTML
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q4" value="Flexbox">
+                        Flexbox
+                    </label>
+
+                </div>
+
+
+                <div class="question-card">
+
+                    <h3>5. Which layout system is used to create rows and columns?</h3>
+
+                    <label>
+                        <input type="radio" name="q5" value="CSS Grid">
+                        CSS Grid
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q5" value="HTML">
+                        HTML
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q5" value="JavaScript">
+                        JavaScript
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q5" value="Local Storage">
+                        Local Storage
+                    </label>
+
+                </div>
+
+
+                <button type="submit" class="submit-exam">
+                    Submit Exam
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Online Examination System</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

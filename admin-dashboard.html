@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            Online Exam - Admin
+        </div>
+
+     <nav id="adminNav">
+    <a href="admin-dashboard.html">Dashboard</a>
+    <a href="#" onclick="adminLogout()">Logout</a>
+</nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="admin-dashboard">
+
+            <h1>Admin Dashboard</h1>
+
+            <p>Manage the Online Examination System</p>
+
+
+            <div class="admin-grid">
+
+                <div class="admin-card">
+
+                    <h2>Manage Questions</h2>
+
+                    <p>
+                        Add and manage examination questions.
+                    </p>
+
+                    <button
+                        onclick="window.location.href='manage-questions.html'">
+                        Manage Questions
+                    </button>
+
+                </div>
+
+
+                <div class="admin-card">
+
+                    <h2>Manage Exams</h2>
+
+                    <p>
+                        Create and manage online examinations.
+                    </p>
+
+                    <button
+                        onclick="window.location.href='manage-exams.html'">
+                        Manage Exams
+                    </button>
+
+                </div>
+
+
+                <div class="admin-card">
+
+                    <h2>Student Results</h2>
+
+                    <p>
+                        View examination results of students.
+                    </p>
+
+                    <button
+                        onclick="window.location.href='admin-results.html'">
+                        View Results
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>© 2026 Online Examination System</p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

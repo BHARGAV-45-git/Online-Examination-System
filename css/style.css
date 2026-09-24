@@ -1,0 +1,855 @@
+/* ------------------------------
+   GENERAL PAGE STYLING
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+
+/* ------------------------------
+   NAVIGATION BAR
+------------------------------ */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+/* ------------------------------
+   HERO BUTTONS
+------------------------------ */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.hero-buttons button {
+    padding: 13px 30px;
+    border: none;
+    border-radius: 6px;
+
+    background-color: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-buttons button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* ------------------------------
+   FEATURES SECTION
+------------------------------ */
+
+.features {
+    padding: 60px 8%;
+    background-color: white;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    color: #1e3a8a;
+    margin-bottom: 35px;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    padding: 30px;
+    background-color: #f4f7fb;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card h3 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e3a8a;
+    color: white;
+}
+
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ------------------------------
+   SIGNUP / LOGIN FORM
+------------------------------ */
+
+.form-section {
+    min-height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+.form-container {
+    width: 400px;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    text-align: left;
+}
+
+.form-container h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.form-container > p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-container input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+.form-container input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.form-container button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #1d4ed8;
+}
+
+.form-message {
+    margin-top: 15px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+.form-link {
+    margin-top: 20px;
+}
+
+.form-link a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.form-link a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   USER DASHBOARD
+------------------------------ */
+
+.dashboard {
+    min-height: 550px;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.dashboard h1 {
+    color: #1e3a8a;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.dashboard > p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.dashboard-card {
+    background-color: white;
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card h2 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.dashboard-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.dashboard-card button {
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #2563eb;
+    color: white;
+
+    cursor: pointer;
+}
+
+.dashboard-card button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* ------------------------------
+   EXAM PAGE
+------------------------------ */
+
+.exam-section {
+    min-height: 600px;
+    padding: 50px 8%;
+}
+
+.exam-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.exam-header h1 {
+    color: #1e3a8a;
+    font-size: 32px;
+}
+
+.timer {
+    background-color: #1e3a8a;
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.question-card {
+    background-color: white;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.question-card h3 {
+    color: #222;
+    margin-bottom: 18px;
+}
+
+.question-card label {
+    display: block;
+
+    padding: 10px;
+
+    margin-bottom: 8px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.question-card label:hover {
+    background-color: #f0f5ff;
+}
+
+.question-card input {
+    margin-right: 10px;
+}
+
+.submit-exam {
+    display: block;
+
+    margin: 30px auto 0;
+
+    padding: 14px 35px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #2563eb;
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.submit-exam:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* ------------------------------
+   EXAM RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 768px) {
+
+    .exam-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .exam-section {
+        padding: 30px 5%;
+    }
+}
+
+
+
+/* ------------------------------
+   RESULT PAGE
+------------------------------ */
+
+.result-section {
+    min-height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+.result-container {
+    width: 450px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+.result-container h1 {
+    color: #1e3a8a;
+
+    margin-bottom: 10px;
+}
+
+.result-container > p {
+    color: #555;
+
+    margin-bottom: 25px;
+}
+
+.score-box {
+    background-color: #f0f5ff;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+}
+
+.score-box h2 {
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+.score-box p {
+    font-size: 40px;
+
+    font-weight: bold;
+
+    color: #1e3a8a;
+}
+
+#resultMessage {
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+.result-container button {
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.result-container button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* ------------------------------
+   PROFILE PAGE
+------------------------------ */
+
+.profile-section {
+    min-height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+.profile-container {
+    width: 450px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+.profile-container h1 {
+    color: #1e3a8a;
+
+    margin-bottom: 30px;
+}
+
+.profile-info {
+    text-align: left;
+
+    background-color: #f0f5ff;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    margin-bottom: 25px;
+}
+
+.profile-info p {
+    margin-bottom: 18px;
+
+    color: #555;
+
+    font-size: 17px;
+}
+
+.profile-info p:last-child {
+    margin-bottom: 0;
+}
+
+.profile-info strong {
+    color: #1e3a8a;
+}
+
+.profile-container button {
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.profile-container button:hover {
+    background-color: #1d4ed8;
+}
+
+
+
+/* ------------------------------
+   ADMIN DASHBOARD
+------------------------------ */
+
+.admin-dashboard {
+    min-height: 550px;
+
+    padding: 60px 8%;
+
+    text-align: center;
+}
+
+.admin-dashboard h1 {
+    color: #1e3a8a;
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+.admin-dashboard > p {
+    color: #555;
+
+    font-size: 18px;
+
+    margin-bottom: 40px;
+}
+
+.admin-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.admin-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.admin-card h2 {
+    color: #2563eb;
+
+    margin-bottom: 15px;
+}
+
+.admin-card p {
+    color: #555;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.admin-card button {
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.admin-card button:hover {
+    background-color: #1d4ed8;
+}
+
+
+@media (max-width: 768px) {
+
+    .admin-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ------------------------------
+   MANAGE QUESTIONS
+------------------------------ */
+
+.manage-section {
+    min-height: 600px;
+
+    padding: 50px 8%;
+}
+
+.manage-section > h1 {
+    text-align: center;
+
+    color: #1e3a8a;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+.manage-section > p {
+    text-align: center;
+
+    color: #555;
+
+    margin-bottom: 30px;
+}
+
+.question-form-container {
+    max-width: 600px;
+
+    margin: 0 auto 40px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.question-form-container label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+.question-form-container input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+.question-form-container button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.question-form-container button:hover {
+    background-color: #1d4ed8;
+}
+
+.question-list {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.question-list h2 {
+    color: #1e3a8a;
+
+    margin-bottom: 20px;
+}
+
+.question-item {
+    background-color: white;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.question-item h3 {
+    margin-bottom: 12px;
+
+    color: #222;
+}
+
+.question-item p {
+    color: #555;
+
+    margin-bottom: 6px;
+}

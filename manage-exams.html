@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Exams</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            Online Exam - Admin
+        </div>
+
+        <nav>
+            <a href="admin-dashboard.html">Dashboard</a>
+            <a href="index.html">Home</a>
+            <a href="#" onclick="adminLogout()">Logout</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="manage-section">
+
+            <h1>Manage Exams</h1>
+
+            <p>Create and manage examinations.</p>
+
+            <div class="question-form-container">
+
+                <form id="examForm">
+
+                    <label for="examName">
+                        Exam Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="examName"
+                        placeholder="Enter exam name"
+                        required
+                    >
+
+                    <label for="examDuration">
+                        Duration (minutes)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="examDuration"
+                        placeholder="Enter duration"
+                        required
+                    >
+
+                    <button type="submit">
+                        Create Exam
+                    </button>
+
+                </form>
+
+                <p
+                    class="form-message"
+                    id="examMessage">
+                </p>
+
+            </div>
+
+            <div class="question-list">
+
+                <h2>Created Exams</h2>
+
+                <div id="examList"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Online Examination System</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

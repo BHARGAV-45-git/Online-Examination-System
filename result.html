@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exam Result</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            Online Exam
+        </div>
+
+        <nav>
+            <a href="user-dashboard.html">Dashboard</a>
+            <a href="index.html">Home</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="result-section">
+
+            <div class="result-container">
+
+                <h1>Exam Result</h1>
+
+                <p>Your examination has been completed successfully.</p>
+
+                <div class="score-box">
+
+                    <h2>Your Score</h2>
+
+                    <p>
+                        <span id="score">0</span> / 5
+                    </p>
+
+                </div>
+
+                <p id="resultMessage"></p>
+
+                <button onclick="window.location.href='user-dashboard.html'">
+                    Back to Dashboard
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>© 2026 Online Examination System</p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

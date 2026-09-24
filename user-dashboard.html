@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>User Dashboard - Online Examination System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            Online Exam
+        </div>
+
+<nav id="mainNav">
+    <a href="user-dashboard.html">Dashboard</a>
+    <a href="#" onclick="logout()">Logout</a>
+</nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="dashboard">
+
+            <h1>Student Dashboard</h1>
+
+            <p id="welcomeMessage">
+                Welcome to your dashboard.
+            </p>
+
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-card">
+
+                    <h2>Available Exams</h2>
+
+                    <p>
+                        View and attend the available online examinations.
+                    </p>
+
+                    <button onclick="window.location.href='exam.html'">
+                        Start Exam
+                    </button>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <h2>My Results</h2>
+
+                    <p>
+                        View your examination results and scores.
+                    </p>
+
+                    <button onclick="window.location.href='result.html'">
+                        View Results
+                    </button>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <h2>Student Profile</h2>
+
+                    <p>
+                        View your registered account information.
+                    </p>
+
+                    <button onclick="window.location.href='profile.html'">
+                        View Profile
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Online Examination System</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
