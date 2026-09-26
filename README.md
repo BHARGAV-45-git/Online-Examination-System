@@ -95,3 +95,6 @@ The User Module allows students to:
 - Dynamic question management
 - Advanced result analytics
 - Support for multiple examinations and users
+
+
+## Linkedin Article : https://www.linkedin.com/pulse/online-examination-system-academic-team-project-bhargav-kadavakollu-phdvf
